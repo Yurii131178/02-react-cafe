@@ -1,6 +1,6 @@
-import css from "./CafeInfo.module.css";
+import css from "./TempCafeInfo.module.css";
 
-export default function CafeInfo() {
+export default function TempCafeInfo() {
   return (
     <div className={css.container}>
       <h1 className={css.title}>Sip Happens Café</h1>
