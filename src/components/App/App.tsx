@@ -11,10 +11,12 @@ export default function App() {
     bad: 0,
   });
 
+  console.log(votes); // допоки не використовую votes :)
+
   const handleVote = (type: VoteType) => {
-    setVotes((votes) => ({
-      ...votes,
-      [type]: votes[type] + 1,
+    setVotes((prev) => ({
+      ...prev,
+      [type]: prev[type] + 1,
     }));
   };
 
